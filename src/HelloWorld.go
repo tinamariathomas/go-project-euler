@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	euler1(1000);
+	euler2(4000000);
 }
 
 
@@ -18,3 +18,24 @@ func euler1(limit int) {
 	fmt.Println(sumOfValues)
 }
 
+
+func euler2(limit uint64) {
+	var x, y uint64 = 1, 2;
+	var z uint64;
+	var sum uint64 = 2;
+
+	for {
+		z = x + y;
+		if z > limit {
+			break
+		}
+		if (z % 2 == 0) {
+			sum = sum + z;
+		}
+		x = y
+		y = z
+	}
+
+	fmt.Println(sum)
+
+}
