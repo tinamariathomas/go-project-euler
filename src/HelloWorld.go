@@ -3,11 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	simple_loop();
+	euler1(1000);
 }
 
-func simple_loop() {
-	for i := 1; i<=10;i++{
-		fmt.Println(i);
+
+func euler1(limit int) {
+	sumOfValues := 0
+
+	for i := 1; i < limit; i++ {
+		if i % 5 == 0 || i % 3 == 0 {
+			sumOfValues = sumOfValues + i
+		}
 	}
+	fmt.Println(sumOfValues)
 }
+
