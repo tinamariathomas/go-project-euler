@@ -19,10 +19,10 @@ func euler1(limit int) {
 }
 
 
-func euler2(limit uint64) {
-	var x, y uint64 = 1, 2;
-	var z uint64;
-	var sum uint64 = 2;
+func euler2(limit int) {
+	var x, y int = 1, 2;
+	var z int;
+	var sum int = 2;
 
 	for {
 		z = x + y;
