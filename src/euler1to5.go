@@ -1,7 +1,8 @@
 package main;
 
-import "fmt"
-import "math"
+import (
+	"fmt"
+	"math" )
 
 
 func euler5(start int, end int) {
